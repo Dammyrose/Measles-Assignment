@@ -87,12 +87,16 @@ void mousePressed() {
   if ( mouseButton == LEFT) { //Night Mode FALSE
     backgroundColour = color ( random (255), random (255), random (255) );
     background( backgroundColour);
+    ellipse(xLeftEar, yLeftEar, earDiameter, earDiameter);
+    ellipse(xRightEar, yRightEar, earDiameter, earDiameter);
     ellipse(xFace, yFace, widthDiameterFace, heightDiameterFace);
   }//End Left Mouse Button 
   //
   if ( mouseButton == RIGHT) { //Night Mode TRUE 
     backgroundColour = color ( random (255), random (255), 0 );
     background( backgroundColour);
+    ellipse(xLeftEar, yLeftEar, earDiameter, earDiameter);
+    ellipse(xRightEar, yRightEar, earDiameter, earDiameter);
     ellipse(xFace, yFace, widthDiameterFace, heightDiameterFace);  
   } //End Right Mouse Button
   //
